@@ -13,7 +13,6 @@ import javax.servlet.http.HttpServletResponse;
 
 import com.yp.implement.RegisterImple;
 import com.yp.inter.Register;
-import com.yp.util.JSONUtil;
 import com.yp.util.YP_CONST;
 
 import net.sf.json.JSONObject;
@@ -27,21 +26,6 @@ public class registerService extends HttpServlet {
      * 
      */
     private static final long serialVersionUID = -6191717328309925704L;
-
-    @Override
-    public void doGet(HttpServletRequest request, HttpServletResponse response) throws IOException, ServletException
-    {
-        response.setContentType("text/html");
-        PrintWriter out = response.getWriter();
-        out.println("<html>");
-        out.println("<head>");
-        out.println("<title>Hello World!</title>");
-        out.println("</head>");
-        out.println("<body>");
-        out.println("<h1>Hello World!</h1>");
-        out.println("</body>");
-        out.println("</html>");
-    }
 
     @Override
     protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
