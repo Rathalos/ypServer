@@ -1,4 +1,4 @@
 ypServer
 ========
 
-Java Server of yp
+Java Server Of yp
