@@ -4,8 +4,6 @@
 package com.yp.service;
 
 import java.io.IOException;
-import java.io.PrintWriter;
-
 import javax.servlet.ServletException;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
@@ -21,10 +19,7 @@ import net.sf.json.JSONObject;
  *
  */
 public class registerService extends HttpServlet {
-
-    /**
-     * 
-     */
+    
     private static final long serialVersionUID = -6191717328309925704L;
 
     @Override
@@ -35,6 +30,7 @@ public class registerService extends HttpServlet {
         
         String result = register.checkUserCount(account);
         
+        @SuppressWarnings("static-access")
         JSONObject resultJSON = new JSONObject().fromObject(result);
         
         // 错误
